@@ -1,13 +1,22 @@
 {
   "name": "stella-pre",
-  "description": "",
-  "main": "",
+  "version": "0.0.0",
+  "description": "このリポジトリは[stella](https://github.com/koluku/stella)の前段階として開発されたデザインテンプレートです。",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/koluku/stella-pre.git"
+  },
   "author": "koluku",
   "license": "MIT",
-  "devDependencies": {
+  "bugs": {
+    "url": "https://github.com/koluku/stella-pre/issues"
+  },
+  "homepage": "https://github.com/koluku/stella-pre#readme",
+  "dependencies": {
     "gulp": "^3.9.0",
     "gulp-jade": "^1.1.0",
     "gulp-notify": "^2.2.0",
