@@ -6,39 +6,40 @@ html(lang="ja")
     meta(name="viewport" content="width=device-width,initial-scale=1")
     title コルク
     link(rel='stylesheet' href='style.css')
+    link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css")
   body
     header#header
-      h1.logo koluku
-      nav.navi
-        ul.navi-list
-         li About
-         li Works
-         li Contact
+      div.container
+        h1.logo
+          a(href="#")
+            <img src="images/logo.png" class="logo-img">koluku
+        div.search
+          form.search-form
+            input(type="text").search-text
+            button(type="submit").search-submit
+              i.fa.fa-search
     main#main
-      section.article
-        time.article-date 2016-01-08
-        h3.article-title IE8、9、10のサポートが終了します（Vista IE9は継続）
-        div.article-content
-          p <img src="http://koluku.com/wp-content/uploads/2016/01/rest-in-peace-ie.jpg">
-          p 日本時間で13日ですが、ようやく仮想マシンを立ててデザインを確認して発狂することから解放されますね！でも、１つ落とし穴がありますよ！
-          blockquote
-            p 来週12日で、マイクロソフトが、<strong>Internet Explorer 8、9、10のサポートを終了</strong>します。
-            p <a href="http://www.gizmodo.jp/2016/01/ie8_9_10.html">Internet Explorer 8、9、10、来週でお別れです : ギズモード・ジャパン</a>
-      section.article
-        time.article-date 2015-12-20
-        h3.article-title 451エラー（政治的な検閲）が正式に承認されました
-        div.article-content
-          p <img src="http://koluku.com/wp-content/uploads/2015/12/bsPPG_tachiirikinshi.jpg">
-          p 正確にはエラーコードではなくHTTPステータスコードですが、個人的に4xx系はエラーに対するレスポンスが多いのでエラーコードとして認識しています。
-          p <a href="http://cpplover.blogspot.jp/2015/12/http451.html">HTTPステータスコード451(政治的な検閲)が正式に承認される</a>
-      section.article
-        time.article-date 2015-12-19
-        h3.article-title GoogleがHTTPSページが存在する場合に優先的にインデックスされます
-        div.article-content
-          p <img src="http://koluku.com/wp-content/uploads/2015/12/bs15041219023801.jpg">
-          p まぁ細かい内容はリンク先を見てもらうとして、今後はサイトがHTTPSに対応している場合は検索結果に非SSL化されたページが映らなくなるよという内容です。
-          p <a href="http://googlewebmastercentral-ja.blogspot.jp/2015/12/indexing-https-pages-by-default.html">HTTPS ページが優先的にインデックスに登録されるようになります</a>
-          blockquote
-            p 具体的には、HTTP ページに対応する HTTPS ページのクロールを開始します。これは、対応する HTTPS ページがどのページからもリンクされていない場合にも対象となります。同じドメインの 2 つの URL が同じコンテンツを掲載していると思われ、かつ、両者が異なるプロトコル スキームで配信されている場合、通常、以下の条件を満たしていれば HTTPS URL を選択してインデックスに登録します。
+      div.cover
+        div.container
+          section
+            h2 Webってやっぱ難しい
+            p みんなどうやって勉強してるのだろうか
+      div.container
+        ul
+          li 
+            a(href="#") IE8、9、10のサポートが終了します（Vista IE9は継続）
+          li
+            a(href="#") 451エラー（政治的な検閲）が正式に承認されました
+          li
+            a(href="#") GoogleがHTTPSページが存在する場合に優先的にインデックスされます
     footer#footer
-      small.copyright Copyright © 2014-2016 @koluku All Rights Reserved.
+      div.container
+        nav
+          ul.navi
+            li.navi-list
+              a(href="#") About
+            li.navi-list
+              a(href="#") Works
+            li.navi-list
+              a(href="#") Contact
+        small.copyright Copyright © 2014-2016 @koluku All Rights Reserved.

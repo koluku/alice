@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+@font-face {
+  font-family: 'satellite';
+  src: url("font/satellite-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 html,
 body {
   color: $font-color;
@@ -8,11 +14,43 @@ body {
   line-height: $line-height;
   text-align: justify;
   word-break: break-all;
-  background: #fff;
+  background: $background-color;
+}
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+h2 {
+  @extend h1;
+  font-size: 1.8rem;
+}
+h3 {
+  @extend h1;
+  font-size: 1.6rem;
+}
+h4 {
+  @extend h1;
+  font-size: 1.4rem;
+}
+h5 {
+  @extend h1;
+  font-size: 1.2rem;
 }
 p {
   margin: 1em 0;
-  font-size: 1rem;
+  line-height: 1.8;
+}
+a {
+  color: $anker-color;
+  text-decoration: none;
+}
+blockquote {
+  box-sizing: border-box;
+  margin: 0;
+  margin-left: 20px;
+  padding: .5em 1em;
+  background: #ddd;
+  border-left: solid 5px #999;
 }
 img {
   max-width: 100%;
