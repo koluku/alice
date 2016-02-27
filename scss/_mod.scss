@@ -1,25 +1,20 @@
 @charset "utf-8";
 
 .logo {
-  display: block;
-  margin: 5px;
+  margin: 2px;
   font-size: 32px;
   font-weight: 300;
   line-height: 1;
   float: left;
 
-  &-img {
-    margin-right: 7px;
-    float: left;
-  }
   a {
     display: block;
-    font-family: satellite;
-    color: $font-color;
+    font-family: 'Black Ops One', cursive;
+    color: lighten(#c0392b, 3%);
   }
 }
 .search {
-  margin-top: 8px;
+  margin-top: 2px;
   float: right;
 
   &-form {
@@ -27,7 +22,7 @@
   }
     &-text {
       box-sizing: border-box;
-      width: 200px;
+      width: 180px;
       height: 28px;
       padding: 2px;
       padding-right: 30px;
@@ -66,6 +61,10 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+
+    @media screen and (max-width: $tablet-size) {
+      display: none;
+    }
   }
   h2 {
     color: #fff;
@@ -78,10 +77,85 @@
     text-align: center;
   }
 }
+.infobar {
+  width: 100%;
+  padding-top: 5px;
+  background: $background-color;
+  border-bottom: solid 1px $border-color;
 
+  a {
+    @include clearfix;
+    display: block;
+    margin-bottom: 5px;
+    padding: 0 10px;
+
+    &:hover {
+      margin: 0;
+      border-bottom: solid 5px $anker-color;
+    }
+  }
+  dl {
+    margin: 0;
+    float: left;
+  }
+  %dtdd {
+    margin: 0 auto;
+    text-align: center;
+  }
+  dt {
+    @extend %dtdd;
+    color: #666;
+    font-size: .85rem;
+  }
+  dd {
+    @extend %dtdd;
+  }
+}
+.articleline {
+  box-sizing: border-box;
+  margin: 20px 0;
+  padding: 15px;
+  background: $background-color;
+  border: solid 1px $border-color;
+  border-radius: 5px;
+
+  @media screen and (max-width: $tablet-size) {
+    padding: 15px 0;
+    border-right: none;
+    border-left: none;
+    border-radius: 0;
+  }
+}
+.article {
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(0, 0, 0, .2);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, .3);
+
+  &:first-child {
+    padding-top: 10px;
+  }
+  &:last-child {
+    padding-bottom: 10px;
+    border: none;
+  }
+
+  &-time {
+    font-size: .95rem;
+    color: #666;
+  }
+  &-title {
+    margin: 0;
+    margin-bottom: 10px;
+  }
+
+  blockquote {
+    background: #ddd;
+    border-radius: 3px 0 0 3px;
+  }
+}
 .navi {
   @include clearfix;
-  margin: 0;
+  margin: 10px 0;
   padding: 0;
 
   &-list {
@@ -97,6 +171,7 @@
 }
 .copyright {
   display: block;
-  color: #ddd;
+  color: $border-color;
+  font-size: .85rem;
   text-align: center;
 }

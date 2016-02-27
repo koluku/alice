@@ -2,16 +2,16 @@
 
 .container {
   @include clearfix;
-  max-width: 760px;
+  max-width: 750px;
   width: 100%;
   margin: 0 auto;
 }
 #header {
   box-sizing: border-box;
   width: 100%;
-  padding: 2px 0;
+  padding-top: 6px;
   background: #fff;
-  border-bottom: solid 1px #ddd;
+  border-bottom: solid 1px $border-color;
 }
 #main {
   box-sizing: border-box;

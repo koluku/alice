@@ -1,9 +1,13 @@
 @charset "utf-8";
 
-$font-color: #2c3e50;
+$font-color: #333;
 $font-size: 16px;
 $line-height: 1.6;
 $font-family: Arial, "游ゴシック", YuGothic, "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
 
 $anker-color: #2980b9;
-$background-color: #ecf0f1;
+$border-color: #ddd;
+$background-color: #fff;
+
+$tablet-size: 720px;
+$smartphone-size: 480px;

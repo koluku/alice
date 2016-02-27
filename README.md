@@ -2,7 +2,7 @@
 
 ## Description
 
-このリポジトリは[stella](https://github.com/koluku/stella)の前段階として開発されたデザインテンプレートです。
+このリポジトリは[alice](https://github.com/koluku/alice)の前段階として開発されたデザインテンプレートです。
 
 ## Licence
 

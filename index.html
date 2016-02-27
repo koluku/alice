@@ -7,11 +7,12 @@
     <title>コルク</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black+Ops+One">
   </head>
   <body>
     <header id="header">
       <div class="container">
-        <h1 class="logo"><a href="#"><img src="images/logo.png" class="logo-img">koluku</a></h1>
+        <h1 class="logo"><a href="#">koluku</a></h1>
         <div class="search">
           <form class="search-form">
             <input type="text" class="search-text">
@@ -29,12 +30,55 @@
           </section>
         </div>
       </div>
+      <div class="infobar">
+        <div class="container">
+          <dl><a href="#">
+              <dt>記事</dt>
+              <dd>3</dd></a></dl>
+          <dl><a href="#">
+              <dt>カテゴリー</dt>
+              <dd>5</dd></a></dl>
+          <dl><a href="#">
+              <dt>タグ</dt>
+              <dd>0</dd></a></dl>
+        </div>
+      </div>
       <div class="container">
-        <ul>
-          <li> <a href="#">IE8、9、10のサポートが終了します（Vista IE9は継続）</a></li>
-          <li><a href="#">451エラー（政治的な検閲）が正式に承認されました</a></li>
-          <li><a href="#">GoogleがHTTPSページが存在する場合に優先的にインデックスされます</a></li>
-        </ul>
+        <div class="articleline">
+          <section class="article">
+            <time class="article-time">2016-01-08</time>
+            <h3 class="article-title"><a href="#">IE8、9、10のサポートが終了します（Vista IE9は継続）</a></h3>
+            <div class="article-content">
+              <p><img src="http://placehold.it/720x320"></p>
+              <p>日本時間で13日ですが、ようやく仮想マシンを立ててデザインを確認して発狂することから解放されますね！でも、１つ落とし穴がありますよ！</p>
+              <blockquote>
+                <p>来週12日で、マイクロソフトが、<strong>Internet Explorer 8、9、10のサポートを終了</strong>します。</p>
+                <p><a href="http://www.gizmodo.jp/2016/01/ie8_9_10.html">Internet Explorer 8、9、10、来週でお別れです : ギズモード・ジャパン</a></p>
+              </blockquote>
+            </div>
+          </section>
+          <section class="article">
+            <time class="article-time">2015-12-20</time>
+            <h3 class="article-title"><a href="#">451エラー（政治的な検閲）が正式に承認されました</a></h3>
+            <div class="article-content">
+              <p><img src="http://koluku.com/wp-content/uploads/2015/12/bsPPG_tachiirikinshi.jpg"></p>
+              <p>正確にはエラーコードではなくHTTPステータスコードですが、個人的に4xx系はエラーに対するレスポンスが多いのでエラーコードとして認識しています。</p>
+              <p><a href="http://cpplover.blogspot.jp/2015/12/http451.html">HTTPステータスコード451(政治的な検閲)が正式に承認される</a></p>
+            </div>
+          </section>
+          <section class="article">
+            <time class="article-time">2015-12-19</time>
+            <h3 class="article-title"><a href="#">GoogleがHTTPSページが存在する場合に優先的にインデックスされます</a></h3>
+            <div class="article-content">
+              <p><img src="http://koluku.com/wp-content/uploads/2015/12/bs15041219023801.jpg"></p>
+              <p>まぁ細かい内容はリンク先を見てもらうとして、今後はサイトがHTTPSに対応している場合は検索結果に非SSL化されたページが映らなくなるよという内容です。</p>
+              <p><a href="http://googlewebmastercentral-ja.blogspot.jp/2015/12/indexing-https-pages-by-default.html">HTTPS ページが優先的にインデックスに登録されるようになります</a></p>
+              <blockquote>
+                <p>具体的には、HTTP ページに対応する HTTPS ページのクロールを開始します。これは、対応する HTTPS ページがどのページからもリンクされていない場合にも対象となります。同じドメインの 2 つの URL が同じコンテンツを掲載していると思われ、かつ、両者が異なるプロトコル スキームで配信されている場合、通常、以下の条件を満たしていれば HTTPS URL を選択してインデックスに登録します。</p>
+              </blockquote>
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <footer id="footer">

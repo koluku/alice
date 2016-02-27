@@ -45,12 +45,18 @@ a {
   text-decoration: none;
 }
 blockquote {
-  box-sizing: border-box;
   margin: 0;
-  margin-left: 20px;
-  padding: .5em 1em;
-  background: #ddd;
-  border-left: solid 5px #999;
+  margin-left: 1em;
+  padding: 10px;
+
+  p {
+    &:first-child {
+      margin-top: 0;
+    }
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 img {
   max-width: 100%;
