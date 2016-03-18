@@ -1,21 +1,21 @@
 {
-  "name": "stella-prebuild",
+  "name": "alice-prebuild",
   "version": "0.0.0",
-  "description": "このリポジトリは[stella](https://github.com/koluku/stella)の前段階として開発されたデザインテンプレートです。",
+  "description": "このリポジトリは[alice](https://github.com/koluku/alice)の前段階として開発されたデザインテンプレートです。",
   "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/koluku/stella-prebuild.git"
+    "url": "git+https://github.com/koluku/alice-prebuild.git"
   },
   "author": "koluku",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/koluku/stella-prebuild/issues"
+    "url": "https://github.com/koluku/alice-prebuild/issues"
   },
-  "homepage": "https://github.com/koluku/stella-prebuild#readme",
+  "homepage": "https://github.com/koluku/alice-prebuild#readme",
   "devDependencies": {
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.0",
@@ -23,6 +23,7 @@
     "gulp-notify": "^2.2.0",
     "gulp-pleeease": "^2.0.2",
     "gulp-plumber": "^1.0.1",
-    "gulp-sass": "^2.1.1"
+    "gulp-sass": "^2.2.0",
+    "gulp-sourcemaps": "^1.6.0"
   }
 }

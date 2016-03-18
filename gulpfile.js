@@ -5,6 +5,7 @@ var notify      = require('gulp-notify');
 var plumber     = require('gulp-plumber');
 var pleeease    = require('gulp-pleeease');
 var sass        = require('gulp-sass');
+var sourcemaps  = require('gulp-sourcemaps');
 
 paths = {
   jade: ['./jade/'],
@@ -19,7 +20,7 @@ gulp.task('browser-sync', function() {
    });
 });
 gulp.task('jade', function() {
-  gulp.src(paths.jade + '**/*.jade')
+  gulp.src([paths.jade + '**/*.jade', '!' + paths.jade + '**/_*.jade'])
     .pipe(plumber({
       errorHandler: notify.onError('Error: <%= error.message %>')
     }))
@@ -34,8 +35,13 @@ gulp.task('sass', function() {
     .pipe(plumber({
       errorHandler: notify.onError('Error: <%= error.message %>')
     }))
-    .pipe(sass())
-    .pipe(pleeease())
+    .pipe(sass({outputStyle: 'compressed'}))
+    .pipe(sourcemaps.init())
+    .pipe(pleeease({
+      browsers: ['last 2 versions'],
+      minifier: false
+    }))
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());
 });
